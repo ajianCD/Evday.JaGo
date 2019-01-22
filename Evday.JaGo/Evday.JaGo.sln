@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Evday.JaGo.Web", "Evday.JaGo.Web\", "{278F3E0F-EDEC-466B-A7ED-838AB5EEA004}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49481"
+		Debug.AspNetCompiler.PhysicalPath = "Evday.JaGo.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49481\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49481"
+		Release.AspNetCompiler.PhysicalPath = "Evday.JaGo.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49481\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49481"
+		SlnRelativePath = "Evday.JaGo.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.核心架构库", "0.核心架构库", "{E0D73A10-F183-4DCC-B6EF-FD157F233C6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evday.JaGo.Core", "Evday.JaGo.Core\Evday.JaGo.Core.csproj", "{036C1C8B-AFB3-4C4C-A9B9-DFCCD5BC2840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evday.JaGo.SqlDB", "Evday.JaGo.SqlDB\Evday.JaGo.SqlDB.csproj", "{F2CEB307-63FF-49C0-844D-B0A73E27F91E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{278F3E0F-EDEC-466B-A7ED-838AB5EEA004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278F3E0F-EDEC-466B-A7ED-838AB5EEA004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278F3E0F-EDEC-466B-A7ED-838AB5EEA004}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{278F3E0F-EDEC-466B-A7ED-838AB5EEA004}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{036C1C8B-AFB3-4C4C-A9B9-DFCCD5BC2840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036C1C8B-AFB3-4C4C-A9B9-DFCCD5BC2840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036C1C8B-AFB3-4C4C-A9B9-DFCCD5BC2840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036C1C8B-AFB3-4C4C-A9B9-DFCCD5BC2840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CEB307-63FF-49C0-844D-B0A73E27F91E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CEB307-63FF-49C0-844D-B0A73E27F91E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CEB307-63FF-49C0-844D-B0A73E27F91E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CEB307-63FF-49C0-844D-B0A73E27F91E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{036C1C8B-AFB3-4C4C-A9B9-DFCCD5BC2840} = {E0D73A10-F183-4DCC-B6EF-FD157F233C6C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDC8086C-7A8F-46B6-8D2C-3EE1C49D8CA8}
+	EndGlobalSection
+EndGlobal
