@@ -1,0 +1,7 @@
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\bin\Debug\Evday.JaGo.ConsoleTest.exe.config
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\bin\Debug\Evday.JaGo.ConsoleTest.exe
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\bin\Debug\Evday.JaGo.ConsoleTest.pdb
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\obj\Debug\Evday.JaGo.ConsoleTest.csproj.CoreCompileInputs.cache
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\obj\Debug\Evday.JaGo.ConsoleTest.exe
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\obj\Debug\Evday.JaGo.ConsoleTest.pdb
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.ConsoleTest\obj\Debug\Evday.JaGo.ConsoleTest.csprojAssemblyReference.cache

@@ -1,5 +1,4 @@
 ﻿using Evday.JaGo.Core.IRepositories;
-using Evday.JaGo.Core.IRepositories.Commons;
 using Evday.JaGo.Core.LinqExtensions;
 using System;
 using System.Collections.Generic;
@@ -27,7 +26,6 @@ namespace Evday.JaGo.SqlDB
         /// <summary>
         /// 这个在IoC注入时走它
         /// </summary>
-        //[Microsoft.Practices.Unity.InjectionConstructor]
         public EFRepository()
             : this(null)
         { }
@@ -177,6 +175,10 @@ namespace Evday.JaGo.SqlDB
         #endregion
 
         #region IExtensionRepository<TEntity> 成员
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item"></param>
 
         public void BulkInsert(IEnumerable<TEntity> item)
         {
@@ -228,43 +230,6 @@ namespace Evday.JaGo.SqlDB
             return GetModel().FirstOrDefault(predicate);
         }
 
-        //public IQueryable<TEntity> GetModel(Specification.ISpecification<TEntity> specification)
-        //{
-        //    return GetModel().Where(specification.SatisfiedBy());
-        //}
-
-        //public TEntity Find(Specification.ISpecification<TEntity> specification)
-        //{
-        //    return GetModel().FirstOrDefault(specification.SatisfiedBy());
-        //}
-
-        //public IQueryable<TEntity> GetModel(Action<IRepositories.Commons.IOrderable<TEntity>> orderBy, Specification.ISpecification<TEntity> specification)
-        //{
-        //    var queryable = GetModel().Where(specification.SatisfiedBy()).AsQueryable();
-        //    var linq = new Orderable<TEntity>(queryable);
-        //    orderBy(linq);
-        //    return linq.Queryable;
-        //}
-
-        #endregion
-
-        #region IOrderableRepository<TEntity> 成员
-
-        public IQueryable<TEntity> GetModel(Action<Core.IRepositories.Commons.IOrderable<TEntity>> orderBy)
-        {
-            var linq = new Orderable<TEntity>(GetModel());
-            orderBy(linq);
-            return linq.Queryable;
-        }
-
-        public IQueryable<TEntity> GetModel(Action<IOrderable<TEntity>> orderBy, System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate)
-        {
-            var queryable = GetModel().Where(predicate).AsQueryable();
-            var linq = new Orderable<TEntity>(queryable);
-            orderBy(linq);
-            return linq.Queryable;
-        }
-
         #endregion
 
         #region Fields
@@ -286,38 +251,6 @@ namespace Evday.JaGo.SqlDB
         #endregion
 
         #region Private Methods
-
-        /// <summary>
-        /// 实体是否已经追加
-        /// </summary>
-        /// <param name="entity"></param>
-        private void AttachIfNot(TEntity entity)
-        {
-            if (!Db.Set<TEntity>().Local.Contains(entity))
-            {
-                Db.Set<TEntity>().Attach(entity);
-            }
-        }
-
-        /// <summary>
-        /// 根据传入的实体主键，将数据库中老版本的实体取出来
-        /// </summary>
-        /// <param name="entity"></param>
-        /// <returns></returns>
-        private TEntity GetEntityFromDb(TEntity item)
-        {
-
-
-            var pkList = GetPrimaryKey();
-            var entityType = typeof(TEntity);
-            List<object> primaryArr = new List<object>();
-            foreach (var primaryField in pkList.Keys)
-            {
-                primaryArr.Add(entityType.GetProperty(primaryField).GetValue(item, null));
-            }
-            var old = this.Find(primaryArr.ToArray());
-            return old;
-        }
         /// <summary>
         /// 分页进行数据提交的逻辑
         /// </summary>

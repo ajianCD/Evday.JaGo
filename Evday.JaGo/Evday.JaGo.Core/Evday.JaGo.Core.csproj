@@ -41,6 +41,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
@@ -48,23 +49,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRepositories\Commons\IOrderable.cs" />
-    <Compile Include="IRepositories\Commons\Orderable.cs" />
-    <Compile Include="IRepositories\Commons\OrderType.cs" />
-    <Compile Include="IRepositories\Commons\SaveAction.cs" />
-    <Compile Include="IRepositories\Commons\SavedEventArgs.cs" />
-    <Compile Include="IRepositories\DistributedReadWriteForEF\DistributedReadWriteManager.cs" />
-    <Compile Include="IRepositories\DistributedReadWriteForEF\DistributedReadWriteSection.cs" />
-    <Compile Include="IRepositories\DistributedReadWriteForEF\DistributedReadWriteSectionHandler.cs" />
-    <Compile Include="IRepositories\DistributedReadWriteForEF\ReadWriteCommandInterceptor.cs" />
-    <Compile Include="IRepositories\IExtensionRepository.cs" />
-    <Compile Include="IRepositories\IOrderableRepository.cs" />
-    <Compile Include="IRepositories\IRepository.cs" />
-    <Compile Include="LinqExtensions\ObjectContextExtensions.cs" />
+    <Compile Include="Repositories\EFRepository.cs" />
+    <Compile Include="Repositories\IRepositories\IExtensionRepository.cs" />
+    <Compile Include="Repositories\IRepositories\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IRepositories\IUnitOfWorkRepository.cs" />
+    <Compile Include="Repositories\IRepositories\IUnitOfWork.cs" />
+    <Compile Include="Repositories\SqlType.cs" />
+    <Compile Include="Repositories\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

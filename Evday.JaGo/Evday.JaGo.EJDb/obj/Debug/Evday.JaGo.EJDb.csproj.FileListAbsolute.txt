@@ -1,0 +1,15 @@
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\Evday.JaGo.EJDb.dll.config
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\Evday.JaGo.EJDb.dll
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\Evday.JaGo.EJDb.pdb
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\EntityFramework.dll
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\EntityFramework.SqlServer.dll
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\Evday.JaGo.Core.dll
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\Evday.JaGo.Core.pdb
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\Evday.JaGo.Core.dll.config
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\EntityFramework.xml
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\bin\Debug\EntityFramework.SqlServer.xml
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\obj\Debug\Evday.JaGo.EJDb.csprojAssemblyReference.cache
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\obj\Debug\Evday.JaGo.EJDb.csproj.CoreCompileInputs.cache
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\obj\Debug\Evday.JaGo.EJDb.csproj.CopyComplete
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\obj\Debug\Evday.JaGo.EJDb.dll
+E:\个人项目\Evday.JaGo\Evday.JaGo\Evday.JaGo.EJDb\obj\Debug\Evday.JaGo.EJDb.pdb
